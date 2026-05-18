@@ -10,12 +10,15 @@
 <body>
   <header class="site-header">
     <div class="top-bar">Share your resource requirement and we will respond with suitable options</div>
+
     <nav class="navbar">
       <a class="logo" href="index.html">
         <span class="logo-mark">A</span>
         <span>AmeliorateAI</span>
       </a>
+
       <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
       <div class="nav-links" id="navLinks">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
@@ -38,50 +41,87 @@
     <section class="contact-section">
       <div class="contact-card">
         <h2>Contact Information</h2>
-        <p>For consulting, staffing, and delivery support inquiries:</p>
-        <a class="contact-link" href="mailto:contact@ameliorateai.com">contact@ameliorateai.com</a>
+        <p>
+          For consulting, staffing, offshore delivery, finance, and technology resource inquiries,
+          use the form or email us directly.
+        </p>
+
+        <a class="contact-link" href="mailto:contact@ameliorateai.com">
+          contact@ameliorateai.com
+        </a>
+
         <p class="small-note">
-          You can replace this email with your active Zoho mailbox after setup.
+          Please include role type, skill set, location preference, duration, budget range, and start timeline.
         </p>
       </div>
 
-     <form class="contact-form" action="https://formsubmit.co/contact@ameliorateai.com" method="POST">
+      <form class="contact-form" action="https://formspree.io/f/meedqgzl" method="POST">
+        <input type="hidden" name="_subject" value="New inquiry from AmeliorateAI website" />
+
         <label>
           Name
           <input type="text" name="name" placeholder="Your name" required />
         </label>
+
         <label>
           Company
           <input type="text" name="company" placeholder="Company name" />
         </label>
+
         <label>
           Email
           <input type="email" name="email" placeholder="you@company.com" required />
         </label>
+
         <label>
-          Requirement
-          <select name="requirement">
-            <option>IT Staffing</option>
-            <option>Offshore Delivery</option>
-            <option>Data / Analytics</option>
-            <option>QA / Testing</option>
-            <option>Cloud / DevOps</option>
-            <option>Finance Resource</option>
-            <option>Other</option>
+          Phone
+          <input type="tel" name="phone" placeholder="Phone number" />
+        </label>
+
+        <label>
+          Requirement Type
+          <select name="requirement_type" required>
+            <option value="">Select one</option>
+            <option value="IT Staffing">IT Staffing</option>
+            <option value="Offshore Delivery">Offshore Delivery</option>
+            <option value="Data / Analytics">Data / Analytics</option>
+            <option value="QA / Testing">QA / Testing</option>
+            <option value="Cloud / DevOps">Cloud / DevOps</option>
+            <option value="Enterprise Applications">Enterprise Applications</option>
+            <option value="Finance Resource">Finance Resource</option>
+            <option value="Project / Program Management">Project / Program Management</option>
+            <option value="Other">Other</option>
           </select>
         </label>
+
+        <label>
+          Location Preference
+          <select name="location_preference">
+            <option value="">Select one</option>
+            <option value="USA">USA</option>
+            <option value="India">India</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Ireland">Ireland</option>
+            <option value="Dubai / UAE">Dubai / UAE</option>
+            <option value="Remote / Offshore">Remote / Offshore</option>
+            <option value="Flexible">Flexible</option>
+          </select>
+        </label>
+
         <label>
           Message
-          <textarea name="message" rows="6" placeholder="Describe the skills, location, duration, and budget range." required></textarea>
+          <textarea
+            name="message"
+            rows="7"
+            placeholder="Describe the skills needed, number of resources, location, duration, budget range, and timeline."
+            required
+          ></textarea>
         </label>
-<input type="hidden" name="_subject" value="New inquiry from AmeliorateAI website">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_template" value="table">
-<input type="hidden" name="_next" value="https://www.ameliorateai.com/contact.html">
 
         <button class="primary-button" type="submit">Send Requirement</button>
+
         <p class="small-note">
-          Note: This basic form opens the visitor’s email app. For a professional web form, use Zoho Forms and embed it later.
+          After submitting, you may see a Formspree confirmation page. That is normal for the free form setup.
         </p>
       </form>
     </section>
@@ -95,12 +135,14 @@
       </a>
       <p>Global IT consulting, staffing, and delivery support.</p>
     </div>
+
     <div>
       <h4>Pages</h4>
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="contact.html">Contact</a>
     </div>
+
     <div>
       <h4>Contact</h4>
       <a href="mailto:contact@ameliorateai.com">contact@ameliorateai.com</a>
